@@ -1,7 +1,7 @@
 tmp/
 coverage/
 quickbooks-ruby-*.gem
-
+.DS_Store
 Gemfile.lock
 
 .ruby-version

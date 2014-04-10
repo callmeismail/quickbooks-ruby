@@ -1,6 +1,6 @@
 module Quickbooks
   module Model
-    class CreditCardPayment < BaseModel
+    class CreditChargeInfo < BaseModel
       xml_accessor :number, :from => 'Number'
       xml_accessor :type, :from => 'Type'
       xml_accessor :name_on_account, :from => 'NameOnAcct'
@@ -11,9 +11,7 @@ module Quickbooks
       xml_accessor :commercial_card_code, :from => 'CommercialCardCode'
       xml_accessor :txn_mode, :from => 'CCTxnMode'
       xml_accessor :txn_type, :from => 'CCTxnType'
-      xml_accessor :previous_txn_id, :from => 'PrevCCTransId'
-      
-      xml_accessor :credit_charge_info, :from => 'CreditChargeInfo', :as => CreditChargeInfo
+
     end
   end
 end
