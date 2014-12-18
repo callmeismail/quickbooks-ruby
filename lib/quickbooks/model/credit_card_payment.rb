@@ -13,8 +13,8 @@ module Quickbooks
       xml_accessor :txn_type, :from => 'CCTxnType'
       xml_accessor :previous_txn_id, :from => 'PrevCCTransId'
       
-      
       xml_accessor :credit_charge_info, :from => 'CreditChargeInfo', :as => CreditChargeInfo
+      xml_accessor :credit_charge_response, :from => 'CreditChargeResponse', :as => CreditChargeResponse
     end
   end
 end
