@@ -9,10 +9,7 @@ module Quickbooks
       xml_accessor :expiry_year, :from => 'CcExpiryYear', :as => Integer
       xml_accessor :bill_address, :from => 'BillAddrStreet'
       xml_accessor :postal_code, :from => 'PostalCode'
-      xml_accessor :commercial_card_code, :from => 'CommercialCardCode'
-      xml_accessor :txn_mode, :from => 'CCTxnMode'
-      xml_accessor :txn_type, :from => 'CCTxnType'
-
+      xml_accessor :process_payment?, :from => 'ProcessPayment'
     end
   end
 end
